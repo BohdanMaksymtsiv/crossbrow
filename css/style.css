@@ -1,7 +1,14 @@
 body{
-
+	font-family: 'bebas_neuethin', sans-serif;
+	background: #9789f9;
 }
-
+*{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3{
+	margin: 0;
+}
 /* Typography */
 a,
 input[type="submit"],
@@ -51,7 +58,116 @@ textarea {
 }
 
 /* Layout */
+.ba-header{
+	height: 160px;
+}
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 1210px;
+}
+.container-item{
+	background: #f5f4f9;
+	height: 610px;
+	width: 330px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding-top: 40px;
+	position: relative;
+}
+.container-item:hover{
+	width: 370px;
+	height: 690px;
+}
+.container-item:hover .item-center{
+	height: 425px;
+	width: 370px;
+
+}
+.container-item:hover .popular{
+	display: block;
+}
+.popular{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: -90px;
+	z-index: 2;
+	background: url("../images/Popular.png") center center no-repeat;
+	width: 152px;
+	height: 62px;
+}
+.price{
+	font-size: 60px;
+	font-weight: 300;
+	letter-spacing: .008em;
+}
+.price .sup{
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: .008em;
+	vertical-align: top;
+	line-height: 40px;
+}
+.price span{
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: .008em;
+}
+.title{
+	font-size: 24px;
+	letter-spacing: 0.004em;
+	margin-bottom: 20px;
+}
+.item-center{
+	background: url("../images/bg.svg") center center no-repeat;
+	background-size: cover;
+	width: 330px;
+	height: 400px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+.icon{
+	height: 40px;
+	margin: 35px 0;
+}
+.features{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	list-style: none;
+	line-height: 53px;
+}
+.item-footer{
+	display: block;
+	position: relative;
+	height: 60px;
+	width: 100%;
+}
+.button{
+	position: absolute;
+	margin: auto;
+	bottom: -27px;
+	left: calc(50% - 100px);
+	display: block;
+	width: 200px;
+	height: 55px;
+	background: #6fcffb;
+	border-radius: 30px;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 55px;
+	text-align: center;
+	letter-spacing: .08em;
+	text-decoration: none;
+}
+.ba-footer{
+	height: 160px;
 }
